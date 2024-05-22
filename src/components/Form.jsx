@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Form = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name == "" || email == "" || mobile == "" || message == "") {
+      toast.error("Please fill all the details!");
+    } else {
+      console.log(name, email, mobile, message);
+      toast.success("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMobile("");
+      setMessage("");
+    }
+  };
   return (
     <>
       <form className="card-body">
@@ -13,6 +32,8 @@ const Form = () => {
             placeholder="Enter your Name"
             className="input input-bordered"
             required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div className="form-control">
@@ -23,6 +44,9 @@ const Form = () => {
             type="email"
             placeholder="Enter your email"
             className="input input-bordered"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+
           />
         </div>
         <div className="form-control">
@@ -34,6 +58,9 @@ const Form = () => {
             placeholder="Enter your mobile number"
             className="input input-bordered"
             required
+            value={mobile}
+            onChange={(e) => setMobile(e.target.value)}
+
           />
         </div>
         <div className="form-control">
@@ -46,10 +73,15 @@ const Form = () => {
             id=""
             placeholder="Enter your message"
             style={{ resize: "none" }}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+
           ></textarea>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Submit</button>
+          <button onClick={handleSubmit} className="btn btn-primary">
+            Submit
+          </button>
         </div>
       </form>
     </>
