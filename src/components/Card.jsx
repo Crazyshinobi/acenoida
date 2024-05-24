@@ -13,7 +13,6 @@ const Card = ({floor}) => {
           />
         </figure>
         <div className="card-body">
-          {/* <h2 className="card-title text-center">Shoes!</h2> */}
           <p className="text-center font-body font-bold font-lg">{floor}</p>
           
         </div>

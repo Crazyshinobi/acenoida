@@ -7,7 +7,7 @@ const PriceList = () => {
         Price List
       </h1>
 
-      <div className="overflow-x-auto m-14 p-4">
+      <div className="overflow-x-auto m-14 p-4 max-sm:mx-4">
         <table className="table table-zebra text-center font-body">
           {/* head */}
           <thead className="text-lg">
