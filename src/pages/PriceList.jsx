@@ -3,7 +3,7 @@ import React from "react";
 const PriceList = () => {
   return (
     <>
-      <h1 className="text-center font-body text-4xl font-bold mb-8">
+      <h1 className="text-center font-body text-4xl font-bold mb-8 max-sm:text-2xl">
         Price List
       </h1>
 

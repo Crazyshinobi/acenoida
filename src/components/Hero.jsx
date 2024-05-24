@@ -5,8 +5,8 @@ import Form from "./Form";
 const Hero = () => {
   return (
     <>
-      <div className="flex items-center">
-        <div className="basis-[70%]">
+      <div className="flex items-center max-sm:flex-col">
+        <div className="basis-[70%] max-sm:basis-[100%]">
           <div className="carousel w-full h-[450px]">
             <div id="slide1" className="carousel-item relative w-full">
               <img
@@ -67,7 +67,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="basis-[30%]">
+        <div className="basis-[30%] max-sm:w-[90%]">
           <Form/>
         </div>
       </div>

@@ -73,7 +73,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end max-sm:hidden">
           <a className="btn bg-yellow-400">Download Brochure</a>
         </div>
       </div>

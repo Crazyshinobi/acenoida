@@ -4,9 +4,9 @@ const Description = () => {
   return (
     <>
       <div className="text-black text-center py-6 font-body bg-gray-100 leading-loose">
-        <h1 className="text-4xl font-bold">ACE Sector 12 Noida Extension</h1>
+        <h1 className="text-4xl font-bold max-sm:text-2xl max-sm:mx-1">ACE Sector 12 Noida Extension</h1>
 
-        <div className="description my-8 mx-16 text-justify">
+        <div className="description my-8 mx-16 text-justify max-sm:mx-10">
           <p className="mt-12">
             <strong>ACE Group</strong> has introduced a premium residential
             project in <strong>Sector 12 Noida Extension</strong>. This
