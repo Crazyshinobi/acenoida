@@ -5,8 +5,8 @@ import MapComponent from "../components/Map";
 const Contact = () => {
   return (
     <>
-      <div className="p-4">
-        <h1 className="text-center font-body text-4xl font-bold mb-8 py-6 max-sm:text-2xl">
+      <div className="p-4 max-sm:p-2">
+        <h1 className="text-center font-body text-4xl font-bold mb-8 py-6 max-sm:text-2xl max-sm:mb-4">
           Contact us
         </h1>
 
